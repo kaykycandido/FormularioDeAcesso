@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javaS.js"></script>
+    <title>Validação de usuário</title>
+</head>
+<style>
+    article{
+        position: relative;
+        text-align: center;
+        margin-left: 30px;
+    }
+    form{
+        position: relative;
+        text-align: center;
+        padding: 8px;
+
+        border: solid 1px;
+        border-radius: 20px;
+    }
+    .btn{
+        background-color: rgb(46, 116, 223);
+        border: solid 1px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <article>
+        <h1>Confirme seu Usuário</h1>
+        <form action="valid.php" method="post">
+        <br>
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome1" id="nome">
+    <br>
+    <label for="mail">Email:</label>
+    <input type="email" name="email1" id="mail">
+    <br>
+    <label for="data">Data de Nascimento:</label>
+    <input type="date" name="dataNas" id="data">
+    <br>
+    <label for="enderc">Endereço:</label>
+    <input type="text" name="endr" id="enderc">
+    <br>
+    <label for="usuario">Usuário</label>
+    <br>
+  <input type="radio" name="user" id="" value="User">
+  <label for="Cliente">Cliente</label>
+  <input type="radio" name="user" id="" value="Client">
+  <label for="Vendedor">Vendedor</label>
+  <input type="radio" name="user" id="" value="ADm">
+  <label for="Administrador">Administrador</label>
+   <br>
+   <label for="login">Login:</label>
+   <input type="text" name="login1" id="login">
+   <br>
+   <label for="senha">Senha:</label>
+   <input type="password" name="senha1" id="senha">
+   <br>
+   <label for="confSenha">Confirme sua senha</label>
+   <input type="password" id="confSenha" name="pass">
+   <br><br>
+   <input type="submit" value="Enviar"  class="btn">
+   <input type="button" value="Mais informações" class="btn" onclick="abrePopUp()">
+</form>
+    </article>   
+</body>
+</html>
